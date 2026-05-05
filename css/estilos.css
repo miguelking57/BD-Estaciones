@@ -1,0 +1,63 @@
+:root {
+    --bg-main: #12221a;        
+    --bg-card: #1c3628;        
+    --accent-green: #20ff9a;   
+    --accent-lime: #d4ff47;    
+    --text-main: #ffffff;      
+    --text-muted: #a3c9b3;     
+}
+
+body { 
+    background-color: var(--bg-main); 
+    color: var(--text-main); 
+    font-family: 'Segoe UI', Roboto, sans-serif; 
+    margin-bottom: 50px; 
+}
+
+.dashboard-card { 
+    background-color: var(--bg-card); 
+    border-radius: 16px; 
+    border: 1px solid rgba(32, 255, 154, 0.1); 
+    padding: 24px; 
+    height: 100%; 
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2); 
+}
+
+.border-neon-green { border-top: 3px solid var(--accent-green); }
+.border-neon-lime { border-top: 3px solid var(--accent-lime); }
+
+.text-green { color: var(--accent-green) !important; }
+.text-lime { color: var(--accent-lime) !important; }
+
+.kpi-value { font-size: 2.8rem; font-weight: 800; margin: 10px 0; letter-spacing: -1px; }
+.kpi-title { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); font-weight: 600; }
+
+#map { height: 380px; border-radius: 12px; filter: hue-rotate(80deg) brightness(0.9); }
+
+.table-dark-custom { --bs-table-bg: transparent; --bs-table-color: var(--text-main); }
+.table-dark-custom th { color: var(--text-muted); text-transform: uppercase; font-size: 0.8rem; border-bottom: 1px solid rgba(32, 255, 154, 0.2); }
+.table-dark-custom td { border-bottom: 1px solid rgba(255,255,255,0.05); vertical-align: middle; padding: 12px 8px; }
+
+.badge-eco { background-color: rgba(32, 255, 154, 0.15); color: var(--accent-green); border: 1px solid var(--accent-green); font-size: 0.7rem; font-weight: bold;}
+
+.top-bar { display: flex; justify-content: space-between; align-items: center; padding: 25px 0; border-bottom: 1px solid rgba(32, 255, 154, 0.1); margin-bottom: 40px; }
+.logo-text { font-size: 1.8rem; font-weight: 900; letter-spacing: 1px; }
+.chart-container { position: relative; height: 260px; width: 100%; }
+
+.btn-cargar { 
+    background: linear-gradient(45deg, var(--accent-green), var(--accent-lime)); 
+    border: none; color: #12221a; font-weight: 800; 
+    box-shadow: 0 4px 15px rgba(32, 255, 154, 0.3);
+    transition: all 0.3s ease;
+}
+.btn-cargar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(32, 255, 154, 0.5);
+}
+
+.modal-content { background-color: var(--bg-card); border: 1px solid var(--accent-green); box-shadow: 0 0 30px rgba(0,0,0,0.5); }
+.modal-header { border-bottom: 1px solid rgba(32, 255, 154, 0.1); }
+.modal-footer { border-top: 1px solid rgba(32, 255, 154, 0.1); }
+.list-group-item-eco { background-color: transparent; color: var(--text-main); border-bottom: 1px solid rgba(32, 255, 154, 0.1); cursor: pointer; transition: all 0.2s ease; }
+.list-group-item-eco:hover { background-color: rgba(32, 255, 154, 0.1); padding-left: 20px; color: var(--accent-green); }
+.list-group-item-eco:last-child { border-bottom: none; }
